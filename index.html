@@ -6,7 +6,7 @@
 	<title>Місто - це ми</title>
 </head>
 <body>
-	<header class="main-header">
+	<header class="main-header container">
 		<nav class="main-nav">
 			<div class="main-nav__logo logo"
 				<a class="logo__link"><b>Місто</b> це ми</a>
@@ -28,30 +28,145 @@
 		</nav>
 	</header>
 	<main>
-		<h1 class="visual-hidden">Вирішення проблем міста Київ та його покращення</h1>
-		<section class="problems-slider slider">
-			<h2 class="visual-hidden">Актуальні проблеми</h2>
-			<ul class="slider__list">
-				<li class="slider__item">
-					<div class="slider__photos">
-						<span class="slider__area">Деснянський</span>
-						<img class="slider__main-photo" src="img/..." alt="Засмічені зупинки">
+		<div class="container">
+			<h1 class="visual-hidden">Вирішення проблем міста Київ та його покращення</h1>
+			<section class="problems-slider slider">
+				<h2 class="visual-hidden">Актуальні проблеми</h2>
+				<ul class="slider__list">
+					<li class="slider__item">
+						<div class="slider__photos">
+							<span class="slider__area">Деснянський</span>
+							<img class="slider__main-photo" src="img/..." alt="Засмічені зупинки">
+						</div>
+						<div class="slider__desc">
+							<h2 class="slider__title"></h2>
+							<span class="slider__info-line">Інформація</span>
+							<p class="slider__status spider__status--point">пр. Ватутіна, парк "Воля"</p>
+							<p class="slider__text">Easy to ride, care free surfing craft that's fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.</p>
+							<a href="#" class="btn btn--more">Детальніше</a>
+							<a href="#" class="slider__all-threads">Переглянути всі проблеми</a>
+						</div>
+					</li>
+					<div class="slider__contorol">
+						<button class="slider__prev">Назад</button>
+						<button class="slider__next">Далі</button>
 					</div>
-					<div class="slider__desc">
-						<h2 class="slider__title"></h2>
-						<span class="slider__info-line">Інформація</span>
-						<p class="slider__status spider__status--point">пр. Ватутіна, парк "Воля"</p>
-						<p class="slider__text">Easy to ride, care free surfing craft that's fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.</p>
-						<a href="#" class="btn btn--more">Детальніше</a>
-						<a href="#" class="slider__all-threads">Переглянути всі проблеми</a>
+				</ul>
+			</section>
+			<section class="statistic">
+				<h2 class="visual-hidden">Статистика проблем</h2>
+				<div class="statistic__wrapper">
+					<div class="statistic__done  statistic__icon  statistic__icon--done">
+						<span class="statistic__count">420</span>
+						<p class="statistic__text">Вирішено проблем</p>
 					</div>
-				</li>
-				<div class="slider__contorol">
-					<button class="slider__prev">Назад</button>
-					<button class="slider__next">Далі</button>
+					<div class="statistic__waiting  statistic__icon  statistic__icon--clock">
+						<span class="statistic__count">325</span>
+						<p class="statistic__text">Очікують вирішення</p>
+					</div>
+					<div class="statistic__closed  statistic__icon  statistic__icon--closed">
+						<span class="statistic__count">32</span>
+						<p class="statistic__text">Відхилено проблем</p>
+					</div>
 				</div>
-			</ul>
-		</section>
+			</section>
+			<section class="how-work">
+				<div class="how-work__wrapper">
+					<h2 class="section-title">Як це працює</h2>
+					<div class="how-work__block how-work__icon how-work__icon--send">
+						<p class="how-work__desc">Повідомте про проблему</p>
+					</div>
+					<div class="how-work__block how-work__icon how-work__icon--attention">
+						<p class="how-work__desc">Ми звернемо на неї увагу</p>
+					</div>
+					<div class="how-work__block how-work__icon how-work__icon--done">
+						<p class="how-work__desc">Вона буде вирішена</p>
+					</div>
+					<a href="#" class="btn btn--how-work">Повідомити про проблему</a>
+				</div>
+			</section>
+			<section class="areas">
+				<div class="areas__wrapper">
+					<h2 class="section-title">Райони</h2>
+					<ul class="areas__links-list  areas-links">
+						<li class="areas-links__item">
+							<a class="areas-links__link" href="#">Оболонський</a>
+						</li>
+						<li class="areas-links__item">
+							<a class="areas-links__link" href="#">Деснянський</a>
+						</li>
+						<li class="areas-links__item">
+							<a class="areas-links__link" href="#">Деснянський</a>
+						</li>
+						<li class="areas-links__item">
+							<a class="areas-links__link" href="#">Дарницький</a>
+						</li>
+						<li class="areas-links__item">
+							<a class="areas-links__link" href="#">Голосіівський</a>
+						</li>
+						<li class="areas-links__item">
+							<a class="areas-links__link" href="#">Солом’янський</a>
+						</li>
+						<li class="areas-links__item">
+							<a class="areas-links__link" href="#">Подільський</a>
+						</li>
+						<li class="areas-links__item">
+							<a class="areas-links__link" href="#">Шевченківський</a>
+						</li>
+						<li class="areas-links__item">
+							<a class="areas-links__link" href="#">Святошинський</a>
+						</li>
+						<li class="areas-links__item">
+							<a class="areas-links__link" href="#">Печерський</a>
+						</li>
+					</ul>
+					<ul class="areas__threads-list threads-list">
+						<li class="threads-list__item">
+							<div class="threads-list__photo">
+								<span class="threads-list__area">Деснянський</span>
+								<span class="threads-list__likes">6</span>
+								<img src="" alt="Зламані лавочки" class="threads-list__img">
+							</div>
+							<div class="threads-list__desc">
+								<h2><a href="#" class="threads-list__title">Зламані лавочки</a></h2>
+								<p class="threads-list__info threads-list__info--place">пр. Ватутіна, парк “Воля”</p>
+								<p class="threads-list__info threads-list__info--author">Олег Ляшко</p>
+								<p class="threads-list__info threads-list__info--date">26.03.2018</p>
+								<a href="#" class="btn btn--threads-list">Детальніше</a>
+							</div>
+						</li>
+						<li class="threads-list__item">
+							<div class="threads-list__photo">
+								<span class="threads-list__area">Деснянський</span>
+								<span class="threads-list__likes">6</span>
+								<img src="" alt="Зламані лавочки" class="threads-list__img">
+							</div>
+							<div class="threads-list__desc">
+								<h2><a href="#" class="threads-list__title">Зламані лавочки</a></h2>
+								<p class="threads-list__info threads-list__info--place">пр. Ватутіна, парк “Воля”</p>
+								<p class="threads-list__info threads-list__info--author">Олег Ляшко</p>
+								<p class="threads-list__info threads-list__info--date">26.03.2018</p>
+								<a href="#" class="btn btn--threads-list">Детальніше</a>
+							</div>
+						</li>
+						<li class="threads-list__item">
+							<div class="threads-list__photo">
+								<span class="threads-list__area">Деснянський</span>
+								<span class="threads-list__likes">6</span>
+								<img src="" alt="Зламані лавочки" class="threads-list__img">
+							</div>
+							<div class="threads-list__desc">
+								<h2><a href="#" class="threads-list__title">Зламані лавочки</a></h2>
+								<p class="threads-list__info threads-list__info--place">пр. Ватутіна, парк “Воля”</p>
+								<p class="threads-list__info threads-list__info--author">Олег Ляшко</p>
+								<p class="threads-list__info threads-list__info--date">26.03.2018</p>
+								<a href="#" class="btn btn--threads-list">Детальніше</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</div>
 	</main>
 </body>
 </html>
