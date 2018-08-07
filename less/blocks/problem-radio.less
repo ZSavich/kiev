@@ -1,0 +1,115 @@
+.problem-radio {
+
+	&__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+
+		label {
+			margin: 10px 10px;
+		}
+	}
+
+	&__radio {
+		display: none;
+	}
+
+	&__block {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		border: 2px solid @bs-cl;
+		border-radius: 4px;
+		width: 230px;
+		height: 175px;
+
+		opacity: 0.5;
+
+		position: relative;
+
+		cursor: pointer;
+
+		&::after {
+			content: '';
+			display: none;
+			position: absolute;
+			width: 25px;
+			height: 25px;
+
+			right: -10px;
+			top: -10px;
+
+			border-radius: 50%;
+			background-color: @bs-cl;
+			background-image: url(../../img/icons/icon-check.svg);
+			background-repeat: no-repeat;
+			-webkit-background-size: contain;
+			background-size: 15px 15px;
+			background-position: center;
+		}
+	}
+
+	&__icon {
+		display: block;
+		width: 100px;
+		height: 100px;
+
+		margin-bottom: 20px;
+	
+		background-repeat: no-repeat;
+		-webkit-background-size: contain;
+		background-size: contain;
+		background-position: center;
+
+		&--1 {
+			background-image: url(../../img/icons/icon-administr.svg);
+		}
+
+		&--2 {
+			background-image: url(../../img/icons/icon-city.svg);
+		}
+
+		&--3 {
+			background-image: url(../../img/icons/icon-road.svg);
+		}
+
+		&--4 {
+			background-image: url(../../img/icons/icon-social.svg);
+		}
+
+		&--5 {
+			background-image: url(../../img/icons/icon-ecology.svg);
+		}
+
+		&--6 {
+			background-image: url(../../img/icons/icon-transport.svg);
+		}
+
+		&--7 {
+			background-image: url(../../img/icons/icon-service.svg);
+		}
+
+		&--8 {
+			background-image: url(../../img/icons/icon-culture.svg);
+		}
+	}
+
+	&__title {
+		font-size: 18px;
+		line-height: 24px;
+		color: #4f4f4f;
+	}
+
+	&__sub {
+		margin-top: 25px;
+	}
+}
+
+.problem-radio__radio:checked + .problem-radio__block {
+	opacity: 1;
+
+	&::after {
+		display: block;
+	}
+}

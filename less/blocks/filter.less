@@ -1,0 +1,66 @@
+.filter {
+
+	display: flex;
+	justify-content: space-between;
+	flex-grow: 1;
+
+	&__text {
+		font-size: 11px;
+		text-transform: uppercase;
+		color: #a1a8bd;
+	}
+
+	&__select {
+		border: 1px solid white;
+		text-transform: uppercase;
+		font-size: 11px;
+		outline: none;
+		font-weight: bold;
+	}
+
+	&__status {
+
+		display: flex;
+		max-height: 30px;
+		align-items: center;
+
+		&-link {
+			font-size: 13px;
+			color: #343e5c;
+			padding: 5px 10px;
+
+			&--active {
+				background-color: @bs-cl;
+				color: white;
+			}
+		}
+
+	}
+
+	&__status-text {
+		font-size: 13px;
+		line-height: 24px;
+		color: #343e5c;
+		cursor: pointer;
+	}
+
+	&__input {
+		display: none;
+	}
+
+	&__form {
+		display: flex;
+	}
+
+	&__categoty {
+		display: flex;
+		max-height: 30px;
+		align-items: center;
+	}
+
+	&__area {
+		display: flex;
+		max-height: 30px;
+		align-items: center;
+	}
+}

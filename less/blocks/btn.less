@@ -1,0 +1,75 @@
+.btn {
+	color: white;
+	background-color: @bs-cl;
+	text-transform: uppercase;
+	font-size: 14px;
+	padding: 12px 19px;
+	border: 2px solid @bs-cl;
+	cursor: pointer;
+
+	&:hover {
+		background-color: transparent;
+		color: @bs-cl;
+		transition: all .2s;
+	}
+
+	&--default {
+		text-align: center;
+		display: block;
+		width: 100%;
+		max-width: 500px;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	&--threads-list {
+		margin-top: 20px;
+		display: block;
+		text-align: center;
+		padding: 5px;
+	}
+
+	&--post {
+		padding-left: 40px;
+		position: relative;
+
+		&:hover {
+			background-color: darken(@bs-cl,5%);
+			color: white;
+			border-color: darken(@bs-cl, 5%);
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			left: 15px;
+			top: 50%;
+
+			transform: translateY(-50%);
+
+			width: 20px;
+			height: 20px;
+
+			background-image: url(../../img/icons/icon-like.svg);
+			background-repeat: no-repeat;
+			-webkit-background-size: contain;
+			background-size: contain;
+			background-position: center;
+		}
+
+		&--active {
+
+			background-color: ;
+			
+			&::before {
+				background-image: url(../../img/icons/icon-dislike.svg);
+			}
+		}
+	}
+
+	&--add {
+		width: 450px;
+		display: block;
+		margin: auto;
+	}
+}

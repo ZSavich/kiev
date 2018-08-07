@@ -1,0 +1,79 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "PT Sans", Arial, sans-serif;
+	line-height: 24px;
+	font-weight: 400;
+	color: #000000;
+	text-transform: initial;
+
+	background-color: white;
+	background-image: url(../img/bg.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: auto;
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+
+	&:hover {
+		color: #7ccd26;
+	}
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.hide-text {
+  text-indent: -99999px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.checkbox-icon {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-color: #7ccd26;
+	border-radius: 50%;
+	margin-bottom: -5px;
+	position: relative;
+	cursor: pointer;
+  &::after {
+  	content: '';
+  	position: absolute;
+  	width: 12px;
+  	height: 12px;
+  	background-image: url(../img/icons/icon-check.svg);
+  	background-repeat: no-repeat;
+  	background-position: center;
+  	background-size: contain;
+  	left: 50%;
+  	top: 50%;
+  	transform: translate(-50%, -50%);
+  	display: none;
+  }
+}
+
+input[type='checkbox']:checked + .checkbox-icon::after {
+	display: block;
+}
+
+.index-main {
+	margin-top: 200px;
+}
+
+#map {
+	width: 100%;
+	height: 400px;
+}

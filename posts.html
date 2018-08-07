@@ -4,12 +4,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Всі проблеми</title>
+	<link rel="stylesheet" href="css/normalize.css" as="style">
+	<link rel="stylesheet" href="css/style.css" as="style">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet" as="font">
 </head>
 <body>
 	<header class="main-header container">
 		<nav class="main-nav">
-			<div class="main-nav__logo logo"
-				<a class="logo__link"><b>Місто</b> це ми</a>
+			<div class="main-nav__logo logo">
+				<a href="index.html" class="logo__link"><b>Місто</b> це ми</a>
 			</div>
 			<ul class="main-nav__list nav-list">
 				<li class="nav-list__item">
@@ -28,114 +31,136 @@
 		</nav>
 	</header>
 	<main>
-		<div class="container">
-			<section class="all-threads">
-				<div class="all-threads__wrapper">
-					<h1 class="section__title">Всі проблеми</h1>
-					<div class="sorting">
-						<p class="sorting__text">Сортувати по:</p>
-						<select name="sorting" id="sorting" class="sorting__list select">
-							<option value="popular" class="sorting__item sorting__item--active">Популярности</option>
-							<option value="date" class="sorting__item">Дате</option>
-						</select>
-					</div>
-					<div class="filter">
-						<form action="#" method="get" class="filter__form">
-							<div class="filter__categoty filter-category">
-								<p class="filter__text filter-category__text">Категорії:</p>
-								<select name="category" id="category" class="filter__select filter-category__select">
-									<option value="legal">Адміністративно-правові</option>
-									<option value="urban">Міські проблеми</option>
-									<option value="road">Дороги</option></select>
-							</div>
-							<div class="filter__status">
-								<label>
-									<input type="checkbox" name="status" value="done" class="filter__input">
-									<span class="checkbox-icon"></span>
-									<span class="filter__status-text">Вирішені</span>
-							  </label>
-							  <label>
-									<input type="checkbox" name="status" value="waiting" class="filter__input">
-									<span class="checkbox-icon"></span>
-									<span class="filter__status-text">Очікують вирішення</span>
-							  </label>
-							  <label>
-									<input type="checkbox" name="status" value="closed" class="filter__input">
-									<span class="checkbox-icon"></span>
-									<span class="filter__status-text">Відхилені</span>
-							  </label>
-							</div>
-							<div class="filter__area filter-area">
-								<p class="filter__text filter-area__text">Райони:</p>
-								<select name="area" id="area" class="filter__select filter-area__select">
-									<option value="obolon">Оболонський</option>
-									<option value="desn">Деснянський</option>
-									<option value="darn">Дарницький</option>
-									<option value="golos">Голосіівський</option>
-									<option value="solom">Солом’янський</option>
-									<option value="podil">Подільський</option>
-									<option value="shevch">Шевченківський</option>
-									<option value="cvatos">Святошинський</option>
-									<option value="pechersk">Печерський</option>
-								</select>
-							</div>
-							<button type="submit" class="btn btn--submit">Знайти</button>
-						</form>
-					</div>
-					<div class="threads">
-						<ul class="threads__list">
-							<li class="threads__list__item">
-								<div class="threads__list__photo">
-									<span class="threads__list__area">Деснянський</span>
-									<span class="threads__list__likes">6</span>
-									<img src="" alt="Зламані лавочки" class="threads__list__img">
-								</div>
-								<div class="threads__list__desc">
-									<h2><a href="#" class="threads__list__title">Зламані лавочки</a></h2>
-									<p class="threads__list__info threads__list__info--place">пр. Ватутіна, парк “Воля”</p>
-									<p class="threads__list__info threads__list__info--author">Олег Ляшко</p>
-									<p class="threads__list__info threads__list__info--date">26.03.2018</p>
-									<a href="#" class="btn btn--threads__list">Детальніше</a>
-								</div>
-							</li>
-							<li class="threads__list__item">
-								<div class="threads__list__photo">
-									<span class="threads__list__area">Деснянський</span>
-									<span class="threads__list__likes">6</span>
-									<img src="" alt="Зламані лавочки" class="threads__list__img">
-								</div>
-								<div class="threads__list__desc">
-									<h2><a href="#" class="threads__list__title">Зламані лавочки</a></h2>
-									<p class="threads__list__info threads__list__info--place">пр. Ватутіна, парк “Воля”</p>
-									<p class="threads__list__info threads__list__info--author">Олег Ляшко</p>
-									<p class="threads__list__info threads__list__info--date">26.03.2018</p>
-									<a href="#" class="btn btn--threads__list">Детальніше</a>
-								</div>
-							</li>
-							<li class="threads__list__item">
-								<div class="threads__list__photo">
-									<span class="threads__list__area">Деснянський</span>
-									<span class="threads__list__likes">6</span>
-									<img src="" alt="Зламані лавочки" class="threads__list__img">
-								</div>
-								<div class="threads__list__desc">
-									<h2><a href="#" class="threads__list__title">Зламані лавочки</a></h2>
-									<p class="threads__list__info threads__list__info--place">пр. Ватутіна, парк “Воля”</p>
-									<p class="threads__list__info threads__list__info--author">Олег Ляшко</p>
-									<p class="threads__list__info threads__list__info--date">26.03.2018</p>
-									<a href="#" class="btn btn--threads__list">Детальніше</a>
-								</div>
-							</li>
-						</ul>
-					</div>
+		<section class="all-threads container">
+			<h1 class="section-title">Всі проблеми</h1>
+			<div class="all-threads__top-wrapper">
+				<div class="sorting">
+					<p class="sorting__text">Сортувати по:</p>
+					<select name="sorting" id="sorting" class="sorting__list select">
+						<option value="popular" class="sorting__item sorting__item--active">Популярности</option>
+						<option value="date" class="sorting__item">Дате</option>
+					</select>
 				</div>
-			</section>
-		</div>
+				<div class="filter">
+						<div class="filter__categoty filter-category">
+							<p class="filter__text filter-category__text">Категорії:</p>
+							<select name="category" id="category" class="filter__select filter-category__select">
+								<option value="legal">Адміністративно-правові</option>
+								<option value="urban">Міські проблеми</option>
+								<option value="road">Дороги</option></select>
+						</div>
+						<div class="filter__status">
+							<a class="filter__status-link" href="#" title="Показать только выполененные заявки">Вирішені</a>
+							<a class="filter__status-link" href="#" title="Показать заявки которые в ожидании">Очікують вирішення</a>
+							<a class="filter__status-link" href="#" title="Показать заявки были отклонены">Відхилені</a>
+							<a class="filter__status-link  filter__status-link--active" href="#" title="Показать все заявки">Всі</a>
+						</div>
+						<div class="filter__area filter-area">
+							<p class="filter__text filter-area__text">Райони:</p>
+							<select name="area" id="area" class="filter__select filter-area__select">
+								<option value="obolon">Оболонський</option>
+								<option value="desn">Деснянський</option>
+								<option value="darn">Дарницький</option>
+								<option value="golos">Голосіівський</option>
+								<option value="solom">Солом’янський</option>
+								<option value="podil">Подільський</option>
+								<option value="shevch">Шевченківський</option>
+								<option value="cvatos">Святошинський</option>
+								<option value="pechersk">Печерський</option>
+							</select>
+						</div>
+				</div>
+			</div>
+			<div class="threads">
+				<ul class="threads__list">
+					<li class="threads__list__item">
+						<div class="threads__list__photo">
+							<span class="threads__list__area">Деснянський</span>
+							<span class="threads__list__likes">6</span>
+							<img src="img/post-3.jpg" alt="Зламані лавочки" class="threads__list__img">
+						</div>
+						<div class="threads__list__desc">
+							<h2><a href="post.html" class="threads__list__title">Зламані лавочки</a></h2>
+							<p class="threads__list__info threads__list__info--place">пр. Ватутіна, парк “Воля”</p>
+							<p class="threads__list__info threads__list__info--author">Олег Ляшко</p>
+							<p class="threads__list__info threads__list__info--date">26.03.2018</p>
+							<a href="post.html" class="btn btn--threads-list">Детальніше</a>
+						</div>
+					</li>
+					<li class="threads__list__item">
+						<div class="threads__list__photo">
+							<span class="threads__list__area">Деснянський</span>
+							<span class="threads__list__likes">6</span>
+							<img src="img/post-3.jpg" alt="Зламані лавочки" class="threads__list__img">
+						</div>
+						<div class="threads__list__desc">
+							<h2><a href="#" class="threads__list__title">Зламані лавочки</a></h2>
+							<p class="threads__list__info threads__list__info--place">пр. Ватутіна, парк “Воля”</p>
+							<p class="threads__list__info threads__list__info--author">Олег Ляшко</p>
+							<p class="threads__list__info threads__list__info--date">26.03.2018</p>
+							<a href="post.html" class="btn btn--threads-list">Детальніше</a>
+						</div>
+					</li>
+					<li class="threads__list__item">
+						<div class="threads__list__photo">
+							<span class="threads__list__area">Деснянський</span>
+							<span class="threads__list__likes">6</span>
+							<img src="img/post-3.jpg" alt="Зламані лавочки" class="threads__list__img">
+						</div>
+						<div class="threads__list__desc">
+							<h2><a href="#" class="threads__list__title">Зламані лавочки</a></h2>
+							<p class="threads__list__info threads__list__info--place">пр. Ватутіна, парк “Воля”</p>
+							<p class="threads__list__info threads__list__info--author">Олег Ляшко</p>
+							<p class="threads__list__info threads__list__info--date">26.03.2018</p>
+							<a href="post.html" class="btn btn--threads-list">Детальніше</a>
+						</div>
+					</li>
+					<li class="threads__list__item">
+						<div class="threads__list__photo">
+							<span class="threads__list__area">Деснянський</span>
+							<span class="threads__list__likes">6</span>
+							<img src="img/post-3.jpg" alt="Зламані лавочки" class="threads__list__img">
+						</div>
+						<div class="threads__list__desc">
+							<h2><a href="#" class="threads__list__title">Зламані лавочки</a></h2>
+							<p class="threads__list__info threads__list__info--place">пр. Ватутіна, парк “Воля”</p>
+							<p class="threads__list__info threads__list__info--author">Олег Ляшко</p>
+							<p class="threads__list__info threads__list__info--date">26.03.2018</p>
+							<a href="#" class="btn btn--threads-list">Детальніше</a>
+						</div>
+					</li>
+					<li class="threads__list__item">
+						<div class="threads__list__photo">
+							<span class="threads__list__area">Деснянський</span>
+							<span class="threads__list__likes">6</span>
+							<img src="img/post-3.jpg" alt="Зламані лавочки" class="threads__list__img">
+						</div>
+						<div class="threads__list__desc">
+							<h2><a href="#" class="threads__list__title">Зламані лавочки</a></h2>
+							<p class="threads__list__info threads__list__info--place">пр. Ватутіна, парк “Воля”</p>
+							<p class="threads__list__info threads__list__info--author">Олег Ляшко</p>
+							<p class="threads__list__info threads__list__info--date">26.03.2018</p>
+							<a href="#" class="btn btn--threads-list">Детальніше</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="paginator">
+				<a href="#">&laquo;</a>
+				<a href="#">1</a>
+			  <a href="#">2</a>
+			  <a href="#">3</a>
+			  <a href="#">4</a>
+			  <a href="#">5</a>
+			  <a href="#">6</a>
+			  <a href="#">&raquo;</a>
+			</div>
+		</section>
 	</main>
-	<footer class="main-footer container">
-		<div class="main-footer__wrapper">
+	<footer class="main-footer">
+		<div class="main-footer__wrapper  container">
 			<section class="main-footer__nav footer-nav">
-				<b class="footer-nav">Меню</b>
+				<h2 class="footer-nav__title">Меню</h2>
 				<ul class="footer-nav__list">
 					<li class="footer-nav__item"><a href="#" class="footer-nav__link">Головна сторінка</a></li>
 					<li class="footer-nav__item"><a href="#" class="footer-nav__link">Всі проблемі</a></li>
@@ -144,7 +169,7 @@
 				</ul>
 			</section>
 			<section class="main-footer__contacts footer-contacts">
-				<b class="footer-contacts">Контакти</b>
+				<h2 class="footer-contacts__title">Контакти</h2>
 				<ul class="footer-contacts__list">
 					<li class="footer-contacts__item"><a href="#" class="footer-contacts__link">kiev@ukr.net</a></li>
 					<li class="footer-contacts__item"><a href="#" class="footer-contacts__link">38(066)66-43-234-23</a></li>

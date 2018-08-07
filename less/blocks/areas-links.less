@@ -1,0 +1,32 @@
+.areas-links {
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	margin-bottom: 30px;
+	
+	&__item {
+		margin-bottom: 10px;
+
+		input {
+		 display: none;
+		}
+	}
+
+	&__link {
+
+		text-transform: uppercase;
+		padding: 5px 15px;
+		font-size: 16px;
+
+		/**/
+
+
+	}
+}
+
+.areas-links__item input[type='checkbox']:checked + .areas-links__link {
+	background-color: #7ccd26;
+	color: white;	
+}

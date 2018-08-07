@@ -1,0 +1,51 @@
+.how-work {
+	margin-bottom: 80px;
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 50px;
+	}
+	
+	&__block {
+		width: 300px;
+		background-color: white;
+		box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.13);
+		padding: 15px 30px;
+		padding-left: 90px;
+		box-sizing: border-box;
+		border-radius: 4px;
+		position: relative;
+	}
+
+	&__icon::before {
+		content: '';
+		position: absolute;
+		width: 55px;
+		height: 55px;
+		background-color: #1cc327;
+		border-radius: 50%;
+		left: 20px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	&__icon::after {
+		content: '';
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		background-image: url(../../img/icons/icon-check.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		left: 32px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	&__desc {
+		font-size: 22px;
+		color: #272727;
+	}
+}
