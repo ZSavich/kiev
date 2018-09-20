@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Додавання проблеми</title>
+	<link rel="stylesheet" href="css/normalize.css" as="style">
+	<link rel="stylesheet" href="css/style.css" as="style">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet" as="font">
+</head>
+<body>
+	<header class="main-header container">
+		<nav class="main-nav">
+			<div class="main-nav__logo logo">
+				<a href="index.html" class="logo__link"><b>Місто</b> це ми</a>
+			</div>
+			<ul class="main-nav__list nav-list">
+				<li class="nav-list__item">
+					<a href="#" class="nav-list__link  nav-list__link--active">Всі проблемі</a>
+				</li>
+				<li class="nav-list__item">
+					<a href="#" class="nav-list__link">Про нас</a>
+				</li>
+				<li class="nav-list__item">
+					<a href="#" class="nav-list__link">Як це працює?</a>
+				</li>
+			</ul>
+			<div class="main-nav__add-problem">
+				<a href="#" class="btn btn--main">Повідомити про проблему</a>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<section class="add-post container">
+			<h1 class="add-post__title section-title">Додавання проблеми</h1>
+				<div class="add-post__area add-post__container">
+					<p class="add-post__desc">
+						<b class="add-post__desc-step">Крок 1. </b>Виберіть місцезнаходження вашої проблеми на карті. <i class="add-post__desc-small">Для вибору натисніть на місце двічі.</i>
+					</p>
+					<div class="add-post__map">
+						<input type="text" class="input__text" id="pac-input" id="prob-title" placeholder="Введите адрес здесь">
+						<div id="map"></div>
+					</div>
+					<form action="#" method="post" class="add-post__form">
+						<input type="text" name="map--lat" id="lat" class="visual-hidden" value="">
+						<input type="text" name="map--lng" id="lng" class="visual-hidden" value="">
+					<div class="add-post__area-radio">
+						<span class="add-post__form-title">
+							Виберіть район
+						</span>
+						<div class="add-post__radio">
+							<label>
+								<input type="radio" name="area" class="input__radio" id="area1" value="Деснянський" checked>
+								<span>Деснянський</span>
+							</label>
+							<label>
+								<input type="radio" name="area" class="input__radio" id="area2" value="Шевченківський">
+								<span>Шевченківський</span>
+							</label>
+							<label>
+								<input type="radio" name="area" class="input__radio" id="area3" value="Печерський">
+								<span>Печерський</span>
+							</label>
+							<label>
+								<input type="radio" name="area" class="input__radio" id="area4" value="Печерський">
+								<span>Печерський</span>
+							</label>
+							<label>
+								<input type="radio" name="area" class="input__radio" id="area5" value="Печерський">
+								<span>Печерський</span>
+							</label>
+							<label>
+								<input type="radio" name="area" class="input__radio" id="area6" value="Печерський">
+								<span>Печерський</span>
+							</label>
+							<label>
+								<input type="radio" name="area" class="input__radio" id="area7" value="Дніпровський">
+								<span>Дніпровський</span>
+							</label>
+							<label>
+								<input type="radio" name="area" class="input__radio" id="area8" value="Дарницький">
+								<span>Дарницький</span>
+							</label>
+							<label>
+								<input type="radio" name="area" class="input__radio" id="area9" value="Оболонський">
+								<span>Оболонський</span>
+							</label>
+							<label>
+								<input type="radio" name="area" class="input__radio" id="area10" value="Солом’янський">
+								<span>Солом’янський</span>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="add-post__category add-post__container">
+					<p class="add-post__desc">
+						<b class="add-post__desc-step">Крок 2. </b>Вкажіть категорію проблеми<i class="add-post__desc-small">Вам потрібно вибрати категорію до якої належить ваша проблема.</i>
+					</p>
+					<div class="add-post__problem-radio problem-radio">
+						<div class="problem-radio__wrapper">
+							<label>
+								<input type="radio" class="problem-radio__radio" name="problem-category" id="category1" value="category1">
+								<div class="problem-radio__block">
+									<span class="problem-radio__icon  problem-radio__icon--1"></span>
+									<span class="problem-radio__title">Адміністративно-правові</span>
+								</div>
+							</label>
+							<label>
+								<input type="radio" class="problem-radio__radio" name="problem-category" id="category2" value="category2" checked>
+								<div class="problem-radio__block">
+									<span class="problem-radio__icon  problem-radio__icon--2"></span>
+									<span class="problem-radio__title">Міські проблеми</span>
+								</div>
+							</label>
+							<label>
+								<input type="radio" class="problem-radio__radio" name="problem-category" id="category3" value="category3">
+								<div class="problem-radio__block">
+									<span class="problem-radio__icon  problem-radio__icon--3"></span>
+									<span class="problem-radio__title">Дороги</span>
+								</div>
+							</label>
+							<label>
+								<input type="radio" class="problem-radio__radio" name="problem-category" id="category4" value="category4">
+								<div class="problem-radio__block">
+									<span class="problem-radio__icon  problem-radio__icon--4"></span>
+									<span class="problem-radio__title">Соціальні проблеми</span>
+								</div>
+							</label>
+							<label>
+								<input type="radio" class="problem-radio__radio" name="problem-category" id="category5" value="category5">
+								<div class="problem-radio__block">
+									<span class="problem-radio__icon  problem-radio__icon--5"></span>
+									<span class="problem-radio__title">Екологія</span>
+								</div>
+							</label>
+							<label>
+								<input type="radio" class="problem-radio__radio" name="problem-category" id="category6" value="category6">
+								<div class="problem-radio__block">
+									<span class="problem-radio__icon  problem-radio__icon--6"></span>
+									<span class="problem-radio__title">Транспорт</span>
+								</div>
+							</label>
+							<label>
+								<input type="radio" class="problem-radio__radio" name="problem-category" id="category7" value="category7">
+								<div class="problem-radio__block">
+									<span class="problem-radio__icon  problem-radio__icon--7"></span>
+									<span class="problem-radio__title">Сервіс / Обслуговування</span>
+								</div>
+							</label>
+							<label>
+								<input type="radio" class="problem-radio__radio" name="problem-category" id="category8" value="category8">
+								<div class="problem-radio__block">
+									<span class="problem-radio__icon  problem-radio__icon--8"></span>
+									<span class="problem-radio__title">Культура</span>
+								</div>
+							</label>
+						</div>
+						<div class="problem-radio__sub">
+							<div class="problem-radio__sub-radio">
+							<label>
+								<input type="radio" name="sub-prob" class="input__radio" id="sub-prob-1" value="sub-prob-1" checked>
+								<span>Неякісне подання послуг</span>
+							</label>
+							<label>
+								<input type="radio" name="sub-prob" class="input__radio" id="sub-prob-2" value="sub-prob-2">
+								<span>Незручний графік роботи</span>
+							</label>
+							<label>
+								<input type="radio" name="sub-prob" class="input__radio" id="sub-prob-3" value="sub-prob-3">
+								<span>Непрофесійна поведінка обслуговуючого персоналу</span>
+							</label>
+							<label>
+								<input type="radio" name="sub-prob" class="input__radio" id="sub-prob-4" value="sub-prob-4">
+								<span>Відмова у поданні послуги</span>
+							</label>
+							<label>
+								<input type="radio" name="sub-prob" class="input__radio" id="sub-prob-5" value="sub-prob-5">
+								<span>Затягування процесу розгляду</span>
+							</label>
+						</div>
+						</div>
+					</div>
+				</div>
+				<div class="add-post__problem-description add-post__container problem-description">
+					<p class="add-post__desc">
+						<b class="add-post__desc-step">Крок 3. </b>Додайте опис проблеми, фото або відео
+					</p>
+					<div class="problem-description__wrapper">
+						<label>
+							<span class="problem-description__title">
+								Заголовок
+							</span>
+							<input type="text" class="input__text" name="title" id="prob-title" required>
+						</label>
+						<label>
+							<span class="problem-description__title">
+								ПІБ
+							</span>
+							<input type="text" class="input__text" name="name" id="prob-title" required>
+						</label>
+						<label>
+							<span class="problem-description__title">
+								Адреса
+							</span>
+							<input type="text" class="input__text" name="adress" id="prob-title" required>
+						</label>
+						<label>
+							<span class="problem-description__title">
+								опис проблеми
+							</span>
+							<textarea name="message" id="prob-mess" class="input__textarea" cols="30" rows="10" required=""></textarea>
+						</label>
+						<label>
+							<input type="file" name="media" id="prob-media" class="input__media">
+							<span>Додати фото або відео</span>
+						</label>
+					</div>
+				</div>
+				<input type="submit" class="btn btn--add" value="Відправити повідомлення">
+			</form>
+		</section>
+	</main>
+	<footer class="main-footer">
+		<div class="main-footer__wrapper  container">
+			<section class="main-footer__nav footer-nav">
+				<h2 class="footer-nav__title">Меню</h2>
+				<ul class="footer-nav__list">
+					<li class="footer-nav__item"><a href="#" class="footer-nav__link">Головна сторінка</a></li>
+					<li class="footer-nav__item"><a href="#" class="footer-nav__link">Всі проблемі</a></li>
+					<li class="footer-nav__item"><a href="#" class="footer-nav__link">Новини</a></li>
+					<li class="footer-nav__item"><a href="#" class="footer-nav__link">Про нас</a></li>
+				</ul>
+			</section>
+			<section class="main-footer__contacts footer-contacts">
+				<h2 class="footer-contacts__title">Контакти</h2>
+				<ul class="footer-contacts__list">
+					<li class="footer-contacts__item"><a href="#" class="footer-contacts__link">kiev@ukr.net</a></li>
+					<li class="footer-contacts__item"><a href="#" class="footer-contacts__link">38(066)66-43-234-23</a></li>
+					<li class="footer-contacts__item"><a href="#" class="footer-contacts__link">Telegram: @kiev</a></li>
+				</ul>
+			</section>
+			<div class="main-footer__copyright">
+				<p>© 2018 Всі права захищені</p>
+			</div>
+		</div>
+	</footer>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCV9J2ILnak86initr3gYlzrjiVV6EXV0M&libraries=places&callback=initMap">
+  </script>
+	<script src="js/map.js"></script>
+</body>
+</html>
